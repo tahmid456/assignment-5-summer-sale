@@ -18,6 +18,30 @@ const firstKitchenSum = firstKitchenPriceNumber + firstKitchenTotalPriceNumber;
 kitchenTotalPrice.innerText = firstKitchenSum;
 
 
+document.getElementById("apply-btn").addEventListener("click", function(){
+
+
+
+    
+const discountAmount = firstKitchenSum*0.20;
+
+const discountAmountTotal = document.getElementById("discount-price");
+const discountResult = discountAmount.toFixed(2);
+discountAmountTotal.innerText=discountResult;
+
+
+
+const balanceAmount = firstKitchenSum-discountResult;
+
+
+const balanceAmountTotal = document.getElementById("balance-total");
+const balanceResult = balanceAmount.toFixed(2);
+balanceAmountTotal.innerText=balanceResult;
+
+    
+})
+
+
 
 
 }
@@ -41,6 +65,35 @@ const secondKitchenTotalPriceNumber = parseFloat(secondKitchenTotalPriceString);
 
 const secondKitchenSum = secondKitchenPriceNumber + secondKitchenTotalPriceNumber;
 kitchenTotalPrice.innerText = secondKitchenSum;
+
+
+
+
+
+document.getElementById("apply-btn").addEventListener("click", function(){
+
+
+
+    
+    const discountAmount = secondKitchenSum*0.20;
+    
+    const discountAmountTotal = document.getElementById("discount-price");
+    const discountResult = discountAmount.toFixed(2);
+    discountAmountTotal.innerText=discountResult;
+    
+    
+    
+    const balanceAmount = secondKitchenSum-discountResult;
+    
+    
+    const balanceAmountTotal = document.getElementById("balance-total");
+    const balanceResult = balanceAmount.toFixed(2);
+    balanceAmountTotal.innerText=balanceResult;
+    
+        
+    })
+    
+    
 
 
 
@@ -70,6 +123,36 @@ kitchenTotalPrice.innerText = thirdKitchenSum;
 
 
 
+
+
+
+document.getElementById("apply-btn").addEventListener("click", function(){
+
+
+
+    
+    const discountAmount = thirdKitchenSum*0.20;
+    
+    const discountAmountTotal = document.getElementById("discount-price");
+    const discountResult = discountAmount.toFixed(2);
+    discountAmountTotal.innerText=discountResult;
+    
+    
+    
+    const balanceAmount = thirdKitchenSum-discountResult;
+    
+    
+    const balanceAmountTotal = document.getElementById("balance-total");
+    const balanceResult = balanceAmount.toFixed(2);
+    balanceAmountTotal.innerText=balanceResult;
+    
+        
+    })
+    
+    
+
+
+
 }
 
 function showingSportsWear1(){
@@ -94,6 +177,35 @@ sportsTotalPrice.innerText = firstSportsSum;
 
 
 
+
+
+document.getElementById("apply-btn").addEventListener("click", function(){
+
+
+
+    
+    const discountAmount = firstSportsSum*0.20;
+    
+    const discountAmountTotal = document.getElementById("discount-price");
+    const discountResult = discountAmount.toFixed(2);
+    discountAmountTotal.innerText=discountResult;
+    
+    
+    
+    const balanceAmount = firstSportsSum-discountResult;
+    
+    
+    const balanceAmountTotal = document.getElementById("balance-total");
+    const balanceResult = balanceAmount.toFixed(2);
+    balanceAmountTotal.innerText=balanceResult;
+    
+        
+    })
+    
+    
+
+
+
 }
 
 function showingSportsWear2(){
@@ -115,6 +227,37 @@ const secondSportsTotalPriceNumber = parseFloat(secondSportsTotalPriceString);
 
 const secondSportsSum = secondSportsPriceNumber + secondSportsTotalPriceNumber;
 sportsTotalPrice.innerText = secondSportsSum;
+
+
+
+
+
+
+
+document.getElementById("apply-btn").addEventListener("click", function(){
+
+
+
+    
+    const discountAmount = secondSportsSum*0.20;
+    
+    const discountAmountTotal = document.getElementById("discount-price");
+    const discountResult = discountAmount.toFixed(2);
+    discountAmountTotal.innerText=discountResult;
+    
+    
+    
+    const balanceAmount = secondSportsSum-discountResult;
+    
+    
+    const balanceAmountTotal = document.getElementById("balance-total");
+    const balanceResult = balanceAmount.toFixed(2);
+    balanceAmountTotal.innerText=balanceResult;
+    
+        
+    })
+    
+    
 
 
 }
@@ -142,6 +285,36 @@ const thirdSportsSum = thirdSportsPriceNumber + thirdSportsTotalPriceNumber;
 sportsTotalPrice.innerText = thirdSportsSum;
 
 
+
+
+
+
+document.getElementById("apply-btn").addEventListener("click", function(){
+
+
+
+    
+    const discountAmount = thirdSportsSum*0.20;
+    
+    const discountAmountTotal = document.getElementById("discount-price");
+    const discountResult = discountAmount.toFixed(2);
+    discountAmountTotal.innerText=discountResult;
+    
+    
+    
+    const balanceAmount = thirdSportsSum-discountResult;
+    
+    
+    const balanceAmountTotal = document.getElementById("balance-total");
+    const balanceResult = balanceAmount.toFixed(2);
+    balanceAmountTotal.innerText=balanceResult;
+    
+        
+    })
+    
+    
+
+
 }
 
 function showingFurniture1(){
@@ -162,6 +335,35 @@ const firstFurnitureTotalPriceNumber = parseFloat(firstFurnitureTotalPriceString
 
 const firstFurnitureSum = firstFurniturePriceNumber + firstFurnitureTotalPriceNumber;
 furnitureTotalPrice.innerText = firstFurnitureSum;
+
+
+
+
+
+document.getElementById("apply-btn").addEventListener("click", function(){
+
+
+
+    
+    const discountAmount = firstFurnitureSum*0.20;
+    
+    const discountAmountTotal = document.getElementById("discount-price");
+    const discountResult = discountAmount.toFixed(2);
+    discountAmountTotal.innerText=discountResult;
+    
+    
+    
+    const balanceAmount = firstFurnitureSum-discountResult;
+    
+    
+    const balanceAmountTotal = document.getElementById("balance-total");
+    const balanceResult = balanceAmount.toFixed(2);
+    balanceAmountTotal.innerText=balanceResult;
+    
+        
+    })
+    
+    
 
 
 
@@ -186,6 +388,33 @@ const secondFurnitureTotalPriceNumber = parseFloat(secondFurnitureTotalPriceStri
 
 const secondFurnitureSum = secondFurniturePriceNumber + secondFurnitureTotalPriceNumber;
 furnitureTotalPrice.innerText = secondFurnitureSum;
+
+
+
+document.getElementById("apply-btn").addEventListener("click", function(){
+
+
+
+    
+    const discountAmount = secondFurnitureSum*0.20;
+    
+    const discountAmountTotal = document.getElementById("discount-price");
+    const discountResult = discountAmount.toFixed(2);
+    discountAmountTotal.innerText=discountResult;
+    
+    
+    
+    const balanceAmount = secondFurnitureSum-discountResult;
+    
+    
+    const balanceAmountTotal = document.getElementById("balance-total");
+    const balanceResult = balanceAmount.toFixed(2);
+    balanceAmountTotal.innerText=balanceResult;
+    
+        
+    })
+    
+    
 
 
 
@@ -215,4 +444,52 @@ furnitureTotalPrice.innerText = thirdFurnitureSum;
 
 
 
+document.getElementById("apply-btn").addEventListener("click", function(){
+
+
+
+    
+    const discountAmount = thirdFurnitureSum*0.20;
+    
+    const discountAmountTotal = document.getElementById("discount-price");
+    const discountResult = discountAmount.toFixed(2);
+    discountAmountTotal.innerText=discountResult;
+    
+    
+    
+    const balanceAmount = thirdFurnitureSum-discountResult;
+    
+    
+    const balanceAmountTotal = document.getElementById("balance-total");
+    const balanceResult = balanceAmount.toFixed(2);
+    balanceAmountTotal.innerText=balanceResult;
+    
+        
+    })
+    
+    
+
+
+
+
 }
+
+
+
+document.getElementById("input-field").addEventListener("keyup", function(event){
+
+    const text = event.target.value;
+    const applyButton = document.getElementById("apply-btn")
+    const totalPrice = document.getElementById("total-price");
+    if(text === "SELL200" ){
+    
+    applyButton.removeAttribute("disabled");
+    
+    }
+    else{
+
+        applyButton.setAttribute("disabled", true);
+    }
+   
+    
+    })

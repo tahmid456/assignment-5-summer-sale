@@ -19,17 +19,7 @@ background-size: contain;
 
 
 }
-.disabled-btn{
 
-cursor: pointer;
-color:white;
-background-color: pink;
-border-radius: 8px;
-padding: 12px;
-pointer-events: none;
-
-
-}
 
 
 
@@ -320,7 +310,7 @@ pointer-events: none;
 
   <h1 class="font-bold">Have a coupon ?</h1>
   
-  <input type="text" placeholder="Coupon code"> <button class="disabled-btn">Apply</button>
+  <input id="input-field" type="text" placeholder="Coupon code"> <button id="apply-btn" class="bg-pink-500 rounded-lg p-3 ml-5 text-white"disabled>Apply</button>
   
   <div class="answer-card w-80 bg-slate-100 mt-12">
   
@@ -344,7 +334,7 @@ pointer-events: none;
   
       <p>Total price : <span id="total-price">0.00</span>tk</p>
       <p>Discount price : <span id="discount-price">0.00</span>tk</p>
-      <p>Total : <span id="total-price-without-discount">0.00</span> tk</p>
+      <p>Total : <span id="balance-total">0.00</span>tk</p>
       
   
     </div>
@@ -354,13 +344,15 @@ pointer-events: none;
   
   
   </div>
-  <button class="disabled-btn mt-64 ml-10 w-60">Make Purchase</button>
+  <button id="btn-purchase" class="disabled-btn mt-64 ml-10 w-60 bg-pink-500 rounded-lg p-3  text-white"disabled>Make Purchase</button>
   
   
     </div>
 
 
 </div>
+
+
 
     </main>
     <footer>
@@ -369,6 +361,12 @@ pointer-events: none;
 
     </footer>
 
+    <script>
+
+
+    </script>
+
     <script src="index.js"></script>
+    <script src="discount.js"></script>
 </body>
 </html>
