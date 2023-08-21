@@ -38,8 +38,26 @@ const balanceAmountTotal = document.getElementById("balance-total");
 const balanceResult = balanceAmount.toFixed(2);
 balanceAmountTotal.innerText=balanceResult;
 
+
+
     
 })
+
+
+const totalPrice = document.getElementById("total-price");
+const purchaseButton = document.getElementById("btn-purchase");
+if(totalPrice>0){
+
+purchaseButton.removeAttribute("disabled");
+
+
+} else{
+
+
+    purchaseButton.setAttribute("disabled", true);
+}
+
+
 
 
 
@@ -493,3 +511,24 @@ document.getElementById("input-field").addEventListener("keyup", function(event)
    
     
     })
+
+    function initialPosition(){
+
+
+const totalPrice = document.getElementById("total-price");
+const discountPrice = document.getElementById("discount-price");
+const balanceTotalAverage = document.getElementById("balance-total");
+const itemsAll = document.getElementById("items-all-show");
+
+
+totalPrice.innerText = 0;
+discountPrice.innerText=0;
+balanceTotalAverage.innerText=0;
+itemsAll.innerText = " ";
+
+
+
+    }
+
+
+

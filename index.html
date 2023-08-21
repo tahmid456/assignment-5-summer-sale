@@ -57,11 +57,11 @@ background-size: contain;
 
 <!-- card section -->
 
-<div class="all-card-container flex justify-around">
+<div class="all-card-container flex flex-wrap lg:flex-row justify-around">
 
 <div class="not-input flex-1">
 
-  <div class="kitchen-card-container flex ">
+  <div class="kitchen-card-container flex flex-wrap md:flex-wrap lg:flex-row ">
 
     <!-- 1st card -->
     
@@ -155,7 +155,7 @@ background-size: contain;
     
     <h1 class="text-2xl font-bold mt-20 ml-20">Sportswear</h1>
     
-    <div class="sports-card-container flex">
+    <div class="sports-card-container flex flex-wrap md:flex-wrap lg: flex-row">
     
         <!-- 4th card sarts -->
     
@@ -234,7 +234,7 @@ background-size: contain;
     </div>
     
     <h1 class="text-2xl font-bold mt-20 ml-20">Furniture</h1>
-    <div class="furniture-card flex">
+    <div class="furniture-card flex flex-wrap md:flex-wrap lg:flex-row">
     
     
         <div onclick="showingFurniture1()" class="card w-60 bg-base-200 shadow-lg rounded-lg p-6 mb-10 mt-20 ml-20">
@@ -344,7 +344,28 @@ background-size: contain;
   
   
   </div>
-  <button id="btn-purchase" class="disabled-btn mt-64 ml-10 w-60 bg-pink-500 rounded-lg p-3  text-white"disabled>Make Purchase</button>
+  
+
+  <!-- Open the modal using ID.showModal() method -->
+<button id="btn-purchase" class="disabled-btn mt-64 ml-10 w-60 bg-pink-500 rounded-lg p-3  text-white" onclick="my_modal_1.showModal()" disabled>Make Purchase</button>
+<dialog id="my_modal_1" class="modal">
+  <form method="dialog" class="modal-box">
+    <div class="text-center">
+      <i class="fa fa-star-half-full" style="font-size:48px;color:red"></i>
+    </div>
+    
+    <h3 class="font-bold text-3xl text-center">Congratulations!</h3>
+    <p class="py-4 text-center">You purchase the product</p>
+    <div class="modal-action">
+      <!-- if there is a button in form, it will close the modal -->
+
+      <div class="text-center">
+        <button onclick="initialPosition()" class="btn text-center bg-pink-500 rounded-lg p-3  text-white">Go Home</button>
+      </div>
+     
+    </div>
+  </form>
+</dialog>
   
   
     </div>
