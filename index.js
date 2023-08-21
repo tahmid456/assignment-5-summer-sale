@@ -543,12 +543,16 @@ const totalPrice = document.getElementById("total-price");
 const discountPrice = document.getElementById("discount-price");
 const balanceTotalAverage = document.getElementById("balance-total");
 const itemsAll = document.getElementById("items-all-show");
+const inputField = document.getElementById("input-field");
+
+
 
 
 totalPrice.innerText = 0;
 discountPrice.innerText=0;
 balanceTotalAverage.innerText=0;
 itemsAll.innerText = " ";
+inputField.value = " ";
 
 
 
