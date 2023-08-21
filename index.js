@@ -17,6 +17,10 @@ const firstKitchenTotalPriceNumber = parseFloat(firstKitchenTotalPriceString);
 const firstKitchenSum = firstKitchenPriceNumber + firstKitchenTotalPriceNumber;
 kitchenTotalPrice.innerText = firstKitchenSum;
 
+const purchaseButton = document.getElementById('btn-purchase');
+purchaseButton.disabled = false;
+
+
 
 document.getElementById("apply-btn").addEventListener("click", function(){
 
@@ -44,18 +48,6 @@ balanceAmountTotal.innerText=balanceResult;
 })
 
 
-const totalPrice = document.getElementById("total-price");
-const purchaseButton = document.getElementById("btn-purchase");
-if(totalPrice>0){
-
-purchaseButton.removeAttribute("disabled");
-
-
-} else{
-
-
-    purchaseButton.setAttribute("disabled", true);
-}
 
 
 
@@ -85,6 +77,9 @@ const secondKitchenSum = secondKitchenPriceNumber + secondKitchenTotalPriceNumbe
 kitchenTotalPrice.innerText = secondKitchenSum;
 
 
+
+const purchaseButton = document.getElementById('btn-purchase');
+purchaseButton.disabled = false;
 
 
 
@@ -141,6 +136,9 @@ kitchenTotalPrice.innerText = thirdKitchenSum;
 
 
 
+const purchaseButton = document.getElementById('btn-purchase');
+purchaseButton.disabled = false;
+
 
 
 
@@ -194,6 +192,9 @@ const firstSportsSum = firstSportsPriceNumber + firstSportsTotalPriceNumber;
 sportsTotalPrice.innerText = firstSportsSum;
 
 
+const purchaseButton = document.getElementById('btn-purchase');
+purchaseButton.disabled = false;
+
 
 
 
@@ -246,6 +247,9 @@ const secondSportsTotalPriceNumber = parseFloat(secondSportsTotalPriceString);
 const secondSportsSum = secondSportsPriceNumber + secondSportsTotalPriceNumber;
 sportsTotalPrice.innerText = secondSportsSum;
 
+
+const purchaseButton = document.getElementById('btn-purchase');
+purchaseButton.disabled = false;
 
 
 
@@ -303,6 +307,11 @@ const thirdSportsSum = thirdSportsPriceNumber + thirdSportsTotalPriceNumber;
 sportsTotalPrice.innerText = thirdSportsSum;
 
 
+const purchaseButton = document.getElementById('btn-purchase');
+purchaseButton.disabled = false;
+
+
+
 
 
 
@@ -355,6 +364,9 @@ const firstFurnitureSum = firstFurniturePriceNumber + firstFurnitureTotalPriceNu
 furnitureTotalPrice.innerText = firstFurnitureSum;
 
 
+
+const purchaseButton = document.getElementById('btn-purchase');
+purchaseButton.disabled = false;
 
 
 
@@ -409,6 +421,12 @@ furnitureTotalPrice.innerText = secondFurnitureSum;
 
 
 
+const purchaseButton = document.getElementById('btn-purchase');
+purchaseButton.disabled = false;
+
+
+
+
 document.getElementById("apply-btn").addEventListener("click", function(){
 
 
@@ -458,6 +476,12 @@ const thirdFurnitureTotalPriceNumber = parseFloat(thirdFurnitureTotalPriceString
 
 const thirdFurnitureSum = thirdFurniturePriceNumber + thirdFurnitureTotalPriceNumber;
 furnitureTotalPrice.innerText = thirdFurnitureSum;
+
+
+
+const purchaseButton = document.getElementById('btn-purchase');
+purchaseButton.disabled = false;
+
 
 
 
@@ -529,6 +553,35 @@ itemsAll.innerText = " ";
 
 
     }
+
+
+  
+    
+   function  purchaseButtonEnable(){
+
+    const purchaseButton = document.getElementById('btn-purchase');
+    const totalPrice = document.getElementById("total-price");
+    
+    const totalPriceResult = totalPrice.innerText;
+    const totalPriceNumber = parseFloat(totalPriceResult);
+
+    if(totalPriceNumber>0){
+
+purchaseButton.disabled = false;
+
+    }
+    else{
+
+        purchaseButton.disabled = true;
+    }
+    
+
+
+
+    }
+
+
+
 
 
 
