@@ -66,123 +66,17 @@ pointer-events: none;
 <h1 class="text-2xl mt-12 font-bold mt-20 ml-20" >Kitchenware</h1>
 
 <!-- card section -->
-<div class="kitchen-card-container flex ">
 
-<!-- 1st card -->
+<div class="all-card-container flex justify-around">
 
-<div class="card w-60 bg-base-200 shadow-lg rounded-lg p-6 mb-10 mt-20 ml-20">
-    <figure class="shadow-xl bg-gray-300 mt-6"><img src="./images/prod1.png" alt="Shoes" /></figure>
-    <div class="card-body">
+<div class="not-input flex-1">
 
-        <div class="icon text-center text-orange-300">
+  <div class="kitchen-card-container flex ">
 
-            <i class="fa fa-star-half-full"></i>
-            <i class="fa fa-star-half-full"></i>
-            <i class="fa fa-star-half-full"></i>
-            <i class="fa fa-star-half-full"></i>
-            <i class="fa fa-star-half-full"></i>
-        </div>
-        
-        <h1 class="text-center font-bold">K.accessories</h1>
-        <p class="text-center">39.00tk</p>
-        
-      
-      </div>
-    </div>
-  
-  <!-- 1st card ends -->
-
-  <!-- 2nd card starts -->
-<div class="card w-60 bg-base-200 shadow-lg rounded-lg p-6 mb-10 mt-20 ml-20">
-    <figure class="shadow-xl bg-gray-300 mt-6"><img src="./images/prod2.png" alt="Shoes" /></figure>
-    <div class="card-body">
-
-        <div class="icon text-center text-orange-300">
-
-            <i class="fa fa-star-half-full"></i>
-            <i class="fa fa-star-half-full"></i>
-            <i class="fa fa-star-half-full"></i>
-            <i class="fa fa-star-half-full"></i>
-            <i class="fa fa-star-half-full"></i>
-        </div>
-        
-        <h1 class="text-center font-bold">K.accessories</h1>
-        <p class="text-center">25.00tk</p>
-        
-      
-      </div>
-    </div>
-  
-
-  <!-- 2nd card ends -->
-
-  <!-- 3rd card starts -->
-<div class="card w-60 bg-base-200 shadow-lg rounded-lg p-6 mb-10 mt-20 ml-20">
-    <figure class="shadow-xl bg-gray-300 mt-6"><img src="./images/prod3.png" alt="Shoes" /></figure>
-    <div class="card-body">
-
-        <div class="icon text-center text-orange-300">
-
-            <i class="fa fa-star-half-full"></i>
-            <i class="fa fa-star-half-full"></i>
-            <i class="fa fa-star-half-full"></i>
-            <i class="fa fa-star-half-full"></i>
-            <i class="fa fa-star-half-full"></i>
-        </div>
-        
-        <h1 class="text-center font-bold">Home cooker</h1>
-        <p class="text-center">49.00tk</p>
-        
-      
-      </div>
-    </div>
-  
-  <!-- 3rd card ends -->
-
-  <div class="input-card ml-20">
-
-<h1 class="font-bold">Have a coupon ?</h1>
-
-<input type="text" placeholder="Coupon code"> <button class="disabled-btn">Apply</button>
-
-<div class="answer-card w-80  bg-blue-600 mt-12">
-
-
-
-
-
-</div>
-<button class="disabled-btn mt-64 ml-10 w-60">Make Purchase</button>
-
-
-  </div>
-
-
-
-
-
-
-
-
-</div>
+    <!-- 1st card -->
     
-
-
-
-
-
-
-
-</div>
-
-<h1 class="text-2xl font-bold mt-20 ml-20">Sportswear</h1>
-
-<div class="sports-card-container flex">
-
-    <!-- 4th card sarts -->
-
-    <div class="card w-60 bg-base-200 shadow-lg rounded-lg p-6 mb-10 mt-20 ml-20">
-        <figure class="shadow-xl bg-gray-300 mt-6"><img src="./images/prod4.png" alt="Shoes" /></figure>
+    <div onclick="showingKitchen1()" class="card w-60  bg-base-200 shadow-lg rounded-lg p-6 mb-10 mt-20 ml-20">
+        <figure class="shadow-xl bg-gray-300  mt-6"><img src="./images/prod1.png" style="width: 120px; height: 150px;" alt="Shoes" /></figure>
         <div class="card-body">
     
             <div class="icon text-center text-orange-300">
@@ -194,19 +88,89 @@ pointer-events: none;
                 <i class="fa fa-star-half-full"></i>
             </div>
             
-            <h1 class="text-center font-bold">Sports black cap</h1>
+            <h1 class="text-center font-bold">K.accessories</h1>
+            <p class="text-center">39.00tk</p>
+            
+          
+          </div>
+        </div>
+      
+      <!-- 1st card ends -->
+    
+      <!-- 2nd card starts -->
+    <div onclick="showingKitchen2()" class="card w-60  bg-base-200 shadow-lg rounded-lg p-6 mb-10 mt-20 ml-20">
+        <figure class="shadow-xl bg-gray-300 mt-6"><img src="./images/prod2.png" alt="Shoes" /></figure>
+        <div class="card-body">
+    
+            <div class="icon text-center text-orange-300">
+    
+                <i class="fa fa-star-half-full"></i>
+                <i class="fa fa-star-half-full"></i>
+                <i class="fa fa-star-half-full"></i>
+                <i class="fa fa-star-half-full"></i>
+                <i class="fa fa-star-half-full"></i>
+            </div>
+            
+            <h1 class="text-center font-bold">K.accessories</h1>
+            <p class="text-center">25.00tk</p>
+            
+          
+          </div>
+        </div>
+      
+    
+      <!-- 2nd card ends -->
+    
+      <!-- 3rd card starts -->
+    <div onclick="showingKitchen3()" class="card w-60  bg-base-200 shadow-lg rounded-lg p-6 mb-10 mt-20 ml-20">
+        <figure class="shadow-xl bg-gray-300 mt-6"><img src="./images/prod3.png" alt="Shoes" /></figure>
+        <div class="card-body">
+    
+            <div class="icon text-center text-orange-300">
+    
+                <i class="fa fa-star-half-full"></i>
+                <i class="fa fa-star-half-full"></i>
+                <i class="fa fa-star-half-full"></i>
+                <i class="fa fa-star-half-full"></i>
+                <i class="fa fa-star-half-full"></i>
+            </div>
+            
+            <h1 class="text-center font-bold">Home cooker</h1>
             <p class="text-center">49.00tk</p>
             
           
           </div>
         </div>
-
-        <!-- 4th card ends -->
-
-
-        <!-- 5th card starts -->
-        <div class="card w-60 bg-base-200 shadow-lg rounded-lg p-6 mb-10 mt-20 ml-20">
-            <figure class="shadow-xl bg-gray-300 mt-6"><img src="./images/prod5.png" alt="Shoes" /></figure>
+      
+      <!-- 3rd card ends -->
+    
+     
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    <h1 class="text-2xl font-bold mt-20 ml-20">Sportswear</h1>
+    
+    <div class="sports-card-container flex">
+    
+        <!-- 4th card sarts -->
+    
+        <div onclick="showingSportsWear1()" class="card w-60 bg-base-200 shadow-lg rounded-lg p-6 mb-10 mt-20 ml-20">
+            <figure class="shadow-xl bg-gray-300 mt-6"><img src="./images/prod4.png" alt="Shoes" /></figure>
             <div class="card-body">
         
                 <div class="icon text-center text-orange-300">
@@ -218,18 +182,19 @@ pointer-events: none;
                     <i class="fa fa-star-half-full"></i>
                 </div>
                 
-                <h1 class="text-center font-bold">Full jersey set</h1>
-                <p class="text-center">69.00tk</p>
+                <h1 class="text-center font-bold">Sports black cap</h1>
+                <p class="text-center">49.00tk</p>
                 
               
               </div>
             </div>
-
-            <!-- 5th card ends -->
-
-            <!-- 6th card starts -->
-            <div class="card w-60 bg-base-200 shadow-lg rounded-lg p-6 mb-10 mt-20 ml-20">
-                <figure class="shadow-xl bg-gray-300 mt-6"><img src="./images/prod6.png" alt="Shoes" /></figure>
+    
+            <!-- 4th card ends -->
+    
+    
+            <!-- 5th card starts -->
+            <div onclick="showingSportsWear2()" class="card w-60 bg-base-200 shadow-lg rounded-lg p-6 mb-10 mt-20 ml-20">
+                <figure class="shadow-xl bg-gray-300 mt-6"><img src="./images/prod5.png" alt="Shoes" /></figure>
                 <div class="card-body">
             
                     <div class="icon text-center text-orange-300">
@@ -241,26 +206,69 @@ pointer-events: none;
                         <i class="fa fa-star-half-full"></i>
                     </div>
                     
-                    <h1 class="text-center font-bold">Sports cates</h1>
-                    <p class="text-center">156.00tk</p>
+                    <h1 class="text-center font-bold">Full jersey set</h1>
+                    <p class="text-center">69.00tk</p>
                     
                   
                   </div>
                 </div>
-
-                <!-- 6th card ends -->
-                          
-
-
-
-</div>
-
-<h1 class="text-2xl font-bold mt-20 ml-20">Furniture</h1>
-<div class="furniture-card flex">
-
-
-    <div class="card w-60 bg-base-200 shadow-lg rounded-lg p-6 mb-10 mt-20 ml-20">
-        <figure class="shadow-xl bg-gray-300 mt-6"><img src="./images/prod7.png" alt="Shoes" /></figure>
+    
+                <!-- 5th card ends -->
+    
+                <!-- 6th card starts -->
+                <div onclick="showingSportsWear3()" class="card w-60 bg-base-200 shadow-lg rounded-lg p-6 mb-10 mt-20 ml-20">
+                    <figure class="shadow-xl bg-gray-300 mt-6"><img src="./images/prod6.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                
+                        <div class="icon text-center text-orange-300">
+                
+                            <i class="fa fa-star-half-full"></i>
+                            <i class="fa fa-star-half-full"></i>
+                            <i class="fa fa-star-half-full"></i>
+                            <i class="fa fa-star-half-full"></i>
+                            <i class="fa fa-star-half-full"></i>
+                        </div>
+                        
+                        <h1 class="text-center font-bold">Sports cates</h1>
+                        <p class="text-center">156.00tk</p>
+                        
+                      
+                      </div>
+                    </div>
+    
+                    <!-- 6th card ends -->
+                              
+    
+    
+    
+    </div>
+    
+    <h1 class="text-2xl font-bold mt-20 ml-20">Furniture</h1>
+    <div class="furniture-card flex">
+    
+    
+        <div onclick="showingFurniture1()" class="card w-60 bg-base-200 shadow-lg rounded-lg p-6 mb-10 mt-20 ml-20">
+            <figure class="shadow-xl bg-gray-300 mt-6"><img src="./images/prod7.png" alt="Shoes" /></figure>
+            <div class="card-body">
+        
+                <div class="icon text-center text-orange-300">
+        
+                    <i class="fa fa-star-half-full"></i>
+                    <i class="fa fa-star-half-full"></i>
+                    <i class="fa fa-star-half-full"></i>
+                    <i class="fa fa-star-half-full"></i>
+                    <i class="fa fa-star-half-full"></i>
+                </div>
+                
+                <h1 class="text-center font-bold">Single relax chair</h1>
+                <p class="text-center">185.00tk</p>
+                
+              
+              </div>
+            </div>
+    <!-- 7th card ends -->
+    <div onclick="showingFurniture2()" class="card w-60 bg-base-200 shadow-lg rounded-lg p-6 mb-10 mt-20 ml-20">
+        <figure class="shadow-xl bg-gray-300 mt-6"><img src="./images/prod8.png" alt="Shoes" /></figure>
         <div class="card-body">
     
             <div class="icon text-center text-orange-300">
@@ -272,54 +280,84 @@ pointer-events: none;
                 <i class="fa fa-star-half-full"></i>
             </div>
             
-            <h1 class="text-center font-bold">Single relax chair</h1>
-            <p class="text-center">185.00tk</p>
+            <h1 class="text-center font-bold">Children play</h1>
+            <p class="text-center">299.00tk</p>
             
           
           </div>
         </div>
-<!-- 7th card ends -->
-<div class="card w-60 bg-base-200 shadow-lg rounded-lg p-6 mb-10 mt-20 ml-20">
-    <figure class="shadow-xl bg-gray-300 mt-6"><img src="./images/prod8.png" alt="Shoes" /></figure>
-    <div class="card-body">
-
-        <div class="icon text-center text-orange-300">
-
-            <i class="fa fa-star-half-full"></i>
-            <i class="fa fa-star-half-full"></i>
-            <i class="fa fa-star-half-full"></i>
-            <i class="fa fa-star-half-full"></i>
-            <i class="fa fa-star-half-full"></i>
+    <!-- 8th card ends -->
+    
+    <div onclick="showingFurniture3()" class="card w-60 bg-base-200 shadow-lg rounded-lg p-6 mb-10 mt-20 ml-20">
+        <figure class="shadow-xl bg-gray-300 mt-6"><img src="./images/prod9.png" alt="Shoes" /></figure>
+        <div class="card-body">
+    
+            <div class="icon text-center text-orange-300">
+    
+                <i class="fa fa-star-half-full"></i>
+                <i class="fa fa-star-half-full"></i>
+                <i class="fa fa-star-half-full"></i>
+                <i class="fa fa-star-half-full"></i>
+                <i class="fa fa-star-half-full"></i>
+            </div>
+            
+            <h1 class="text-center font-bold">Flexible sofa</h1>
+            <p class="text-center">339.00tk</p>
+            
+          
+          </div>
         </div>
-        
-        <h1 class="text-center font-bold">Children play</h1>
-        <p class="text-center">299.00tk</p>
-        
-      
-      </div>
+    <!-- 9th card ends -->
+    
+    
     </div>
-<!-- 8th card ends -->
+    
+    
 
-<div class="card w-60 bg-base-200 shadow-lg rounded-lg p-6 mb-10 mt-20 ml-20">
-    <figure class="shadow-xl bg-gray-300 mt-6"><img src="./images/prod9.png" alt="Shoes" /></figure>
-    <div class="card-body">
+</div>
 
-        <div class="icon text-center text-orange-300">
+<div class="input-card ml-20 flex-1">
 
-            <i class="fa fa-star-half-full"></i>
-            <i class="fa fa-star-half-full"></i>
-            <i class="fa fa-star-half-full"></i>
-            <i class="fa fa-star-half-full"></i>
-            <i class="fa fa-star-half-full"></i>
-        </div>
-        
-        <h1 class="text-center font-bold">Flexible sofa</h1>
-        <p class="text-center">339.00tk</p>
-        
-      
-      </div>
+  <h1 class="font-bold">Have a coupon ?</h1>
+  
+  <input type="text" placeholder="Coupon code"> <button class="disabled-btn">Apply</button>
+  
+  <div class="answer-card w-80 bg-slate-100 mt-12">
+  
+    <!-- select this js element -->
+  
+    <div id="items-all-show" class="showing-items">
+  
+  
+  
+  
+  
     </div>
-<!-- 9th card ends -->
+    <hr>
+  
+    <!-- select this js ends -->
+  
+    <!-- changing price starts -->
+  
+    <div class="changing-price mt-6">
+  
+  
+      <p>Total price : <span>0</span>tk</p>
+      <p>Discount price : <span>0</span>tk</p>
+      <p>Total : <span>0</span> tk</p>
+      
+  
+    </div>
+  
+  <!-- changing price ends -->
+  
+  
+  
+  </div>
+  <button class="disabled-btn mt-64 ml-10 w-60">Make Purchase</button>
+  
+  
+    </div>
 
 
 </div>
